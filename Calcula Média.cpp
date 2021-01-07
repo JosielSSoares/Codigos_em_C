@@ -19,14 +19,12 @@ int main(){
 	
 	Media=(P1*3)+(P2*5)+(T*2);
 	Media=Media/10;
-	
 		if(Media>=7){
 			printf("\nO Aluno foi aprovado");
 					}
 			else{
 				printf("\nO aluno foi reprovado");
-				}			
-			
+				}	
 		printf("\nA media do aluno foi %.2f",Media);
 }
 	
