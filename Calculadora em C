@@ -1,0 +1,80 @@
+#include<stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main()
+{
+
+
+   	char menu; 
+    while(menu!='5')
+    {		
+			
+	
+			float a,b;
+			printf("MENU.\n");
+			printf("QUAL OPERACAOO DESEJA REALIZAR ?.\n");
+			printf("1- ADICAO.\n");
+			printf("2- SUBTRACAO.\n");
+			printf("3- MULTIPLICACAO.\n");
+			printf("4- DIVISAO.\n");
+			printf("5- Sair.\n\n");
+			printf("ESCOLHA A OPCAO: ");
+			scanf("%c",&menu); 
+			
+			switch(menu)
+			{
+				case '1':
+					printf("##### ADICAO ##### \n");
+					printf("Digite o valor 1: \n");
+					scanf("%f", &a);
+					printf("Digite o valor 2: \n");
+					scanf("%f", &b);
+					printf("##### RESULTADO ##### \n");
+					printf("%.2f + %.2f = %.2f\n", a, b, a + b);
+					
+				break;
+				
+				case '2':
+					printf("##### SUBTRACAO ##### \n");
+					printf("Digite o valor 1: \n");
+					scanf("%f", &a);
+					printf("Digite o valor 2: \n");
+					scanf("%f", &b);
+					printf("##### RESULTADO ##### \n");
+					printf("%.2f - %.2f = %.2f\n", a, b, a - b);
+					
+				break;
+
+				case '3':
+					printf("##### MULTIPLICACAO ##### \n");
+					printf("Digite o valor 1: \n");
+					scanf("%f", &a);
+					printf("Digite o valor 2: \n");
+					scanf("%f", &b);
+					printf("##### RESULTADO ##### \n");
+					printf("%.2f * %.2f = %.2f\n", a, b, a * b);
+				break;
+				
+				case '4':
+					printf("##### DIVISAO ##### \n");
+					printf("Digite o valor 1: \n");
+					scanf("%f", &a);
+					printf("Digite o valor 2: \n");
+					scanf("%f", &b);
+
+					if(b == 0)
+						printf("DIVISÃO POR ZERO INVALIDA\n");
+					else
+					printf("##### RESULTADO ##### \n");
+						printf("%.2f / %.2f = %.2f\n", a, b, a/b);
+				break;
+				default:
+						printf("digite certo, burro!!!\n");
+				
+			}
+			system("cls");
+    }
+	return 0;
+
+}
